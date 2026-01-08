@@ -4,288 +4,216 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">.
-    <title>Portfolio - Data Scientist</title>
+    <title>Portofolio Data Scientist</title>
 </head>
 <body>
-    <!-- 1. Profile Section -->
-    <section class="profile" id="profile">
-        <div class="container">
-            <div class="profile-grid">
-                <div class="profile-image-container">
-                    <div class="profile-image">
-                        <!-- Ganti dengan foto Anda -->
-                        <img src="your-photo.jpg" alt="Your Name" style="display: none;">
-                        <!-- Placeholder emoji, hapus setelah foto ditambahkan -->
-                        👤
-                    </div>
-                    <div class="profile-shape"></div>
-                </div>
-                <div class="profile-content">
-                    <h1>Nama Anda</h1>
-                    <p class="title">Data Scientist</p>
-                    <p class="bio">Membantu bisnis mengambil keputusan yang lebih baik melalui analisis data dan machine learning. Berpengalaman dalam membangun model prediktif dan dashboard analytics yang actionable.</p>
-                    <div class="cta-buttons">
-                        <a href="#" class="btn btn-primary">Download CV</a>
-                        <a href="#contact" class="btn btn-secondary">Contact Me</a>
-                    </div>
-                </div>
+    <!-- Navbar -->
+    <nav>
+        <div class="nav-container">
+            <div style="font-weight: bold; font-size: 1.2rem;">AS</div>
+            <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#profile" onclick="closeMenu()">Profile</a></li>
+                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#pengalaman" onclick="closeMenu()">Pengalaman</a></li>
+                <li><a href="#portofolio" onclick="closeMenu()">Portofolio</a></li>
+                <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                <li><button class="btn-download" onclick="downloadCV()">Download CV</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <section id="profile">
+        <div class="profile-content">
+            <div class="profile-image">👤</div>
+            <div class="profile-text">
+                <h1>Ni Putu Ayu Sekar Pradnya Dewi</h1>
+                <p>
+                    I'm undergraduate Computer Science student at Binus University with a strong passion for data science and data analysis. 
+                    I have solid skills in data cleaning, transformation, visualization and modeling. My critical thinking and problem solving skills 
+                    enabling me to identify and solve data-related problems effectively. 
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- 2. Skills Section -->
+    <!-- Skills Section -->
     <section id="skills">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">What I Do</div>
-                <h2 class="section-title">Skills & Expertise</h2>
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Programming</h3>
+                <p>Python, R, SQL, JavaScript</p>
             </div>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <div class="skill-icon">💻</div>
-                    <h3>Programming</h3>
-                    <ul class="skill-list">
-                        <li>Python</li>
-                        <li>SQL</li>
-                        <li>R</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🤖</div>
-                    <h3>Machine Learning</h3>
-                    <ul class="skill-list">
-                        <li>Scikit-learn</li>
-                        <li>TensorFlow</li>
-                        <li>PyTorch</li>
-                        <li>XGBoost</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">📊</div>
-                    <h3>Data Analysis</h3>
-                    <ul class="skill-list">
-                        <li>Pandas & NumPy</li>
-                        <li>Statistical Analysis</li>
-                        <li>Data Visualization</li>
-                        <li>A/B Testing</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">📈</div>
-                    <h3>Business Intelligence</h3>
-                    <ul class="skill-list">
-                        <li>Power BI</li>
-                        <li>Tableau</li>
-                        <li>Looker</li>
-                        <li>Google Analytics</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">☁️</div>
-                    <h3>Cloud & Tools</h3>
-                    <ul class="skill-list">
-                        <li>Google Cloud Platform</li>
-                        <li>AWS</li>
-                        <li>Docker</li>
-                        <li>Git & GitHub</li>
-                    </ul>
-                </div>
-                <div class="skill-card">
-                    <div class="skill-icon">🗄️</div>
-                    <h3>Database</h3>
-                    <ul class="skill-list">
-                        <li>PostgreSQL</li>
-                        <li>MySQL</li>
-                        <li>MongoDB</li>
-                        <li>BigQuery</li>
-                    </ul>
-                </div>
+            <div class="skill-card">
+                <h3>Machine Learning</h3>
+                <p>Scikit-learn, TensorFlow, PyTorch, Keras</p>
+            </div>
+            <div class="skill-card">
+                <h3>Data Analysis</h3>
+                <p>Pandas, NumPy, Statistics, A/B Testing</p>
+            </div>
+            <div class="skill-card">
+                <h3>Visualization</h3>
+                <p>Matplotlib, Seaborn, Plotly, Tableau</p>
+            </div>
+            <div class="skill-card">
+                <h3>Big Data</h3>
+                <p>Spark, Hadoop, Hive, Databricks</p>
+            </div>
+            <div class="skill-card">
+                <h3>Tools & Other</h3>
+                <p>Git, Docker, AWS, Azure, Jupyter</p>
             </div>
         </div>
     </section>
 
-    <!-- 3. Experience Section -->
-    <section id="experience">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">My Journey</div>
-                <h2 class="section-title">Experience & Education</h2>
+    <!-- Experience Section -->
+    <section id="pengalaman">
+        <h2>Pengalaman</h2>
+        <div class="experience-list">
+            <div class="experience-item">
+                <h3>Senior Data Scientist - Perusahaan A</h3>
+                <div class="date">Jan 2022 - Sekarang</div>
+                <p>
+                    Memimpin tim data science dalam mengembangkan model prediktif untuk meningkatkan customer retention sebesar 25%. 
+                    Mengimplementasikan pipeline machine learning end-to-end menggunakan Python dan AWS.
+                </p>
             </div>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-date">2023 - Sekarang</div>
-                    <h3 class="timeline-title">Data Scientist</h3>
-                    <p class="timeline-subtitle">PT Tech Company Indonesia</p>
-                    <p class="timeline-description">Mengembangkan model prediktif untuk optimasi bisnis dan membuat dashboard analytics untuk stakeholder. Bertanggung jawab dalam end-to-end data science project dari data collection hingga deployment.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2022 - 2023</div>
-                    <h3 class="timeline-title">Junior Data Analyst</h3>
-                    <p class="timeline-subtitle">PT Startup Indonesia</p>
-                    <p class="timeline-description">Melakukan analisis data untuk mendukung keputusan bisnis, membuat dashboard reporting, dan berkolaborasi dengan tim product untuk A/B testing.</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2019 - 2023</div>
-                    <h3 class="timeline-title">S1 Statistika / Ilmu Komputer</h3>
-                    <p class="timeline-subtitle">Universitas Indonesia</p>
-                    <p class="timeline-description">IPK: 3.75/4.00 | Fokus: Machine Learning & Data Analytics | Tugas Akhir: Prediksi Customer Churn menggunakan Deep Learning</p>
-                </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">2022</div>
-                    <h3 class="timeline-title">Sertifikasi</h3>
-                    <p class="timeline-subtitle">Professional Certificates</p>
-                    <p class="timeline-description">• Google Data Analytics Professional Certificate<br>• Machine Learning Specialization - Stanford University<br>• Deep Learning Specialization - DeepLearning.AI</p>
-                </div>
+            <div class="experience-item">
+                <h3>Data Scientist - Perusahaan B</h3>
+                <div class="date">Jun 2020 - Des 2021</div>
+                <p>
+                    Mengembangkan recommendation system yang meningkatkan engagement pengguna hingga 40%. 
+                    Melakukan analisis data untuk mendukung keputusan bisnis strategis.
+                </p>
+            </div>
+            <div class="experience-item">
+                <h3>Junior Data Analyst - Perusahaan C</h3>
+                <div class="date">Jan 2019 - Mei 2020</div>
+                <p>
+                    Melakukan data cleaning, exploratory data analysis, dan membuat dashboard untuk monitoring KPI bisnis. 
+                    Berkolaborasi dengan tim product untuk memahami kebutuhan data.
+                </p>
             </div>
         </div>
     </section>
 
-    <!-- 4. Portfolio/Projects Section -->
-    <section id="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">My Work</div>
-                <h2 class="section-title">Featured Projects</h2>
+    <!-- Portfolio Section -->
+    <section id="portofolio">
+        <h2>Portofolio & Projects</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <div class="project-image">📊</div>
+                <div class="project-content">
+                    <h3>Customer Churn Prediction</h3>
+                    <p>
+                        Model machine learning untuk memprediksi customer churn dengan akurasi 87%. 
+                        Membantu perusahaan mengidentifikasi pelanggan berisiko tinggi untuk dilakukan retention strategy.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Scikit-learn</span>
+                        <span class="tool-tag">XGBoost</span>
+                        <span class="tool-tag">Pandas</span>
+                    </div>
+                </div>
             </div>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-number">PROJECT 01</div>
-                        <h3 class="project-title">Customer Churn Prediction</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">Mengembangkan model machine learning untuk memprediksi pelanggan yang berpotensi churn dengan akurasi 89%. Model ini membantu tim marketing untuk retensi pelanggan yang lebih efektif.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">Pandas</span>
-                            <span class="tag">XGBoost</span>
-                        </div>
-                        <a href="#" class="project-link">View on GitHub →</a>
+            <div class="project-card">
+                <div class="project-image">🤖</div>
+                <div class="project-content">
+                    <h3>Sentiment Analysis System</h3>
+                    <p>
+                        Sistem analisis sentimen untuk media sosial menggunakan NLP. 
+                        Memproses ribuan tweet per hari untuk monitoring brand perception secara real-time.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">NLTK</span>
+                        <span class="tool-tag">TensorFlow</span>
+                        <span class="tool-tag">Flask</span>
                     </div>
                 </div>
-
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-number">PROJECT 02</div>
-                        <h3 class="project-title">E-Commerce Sentiment Analysis</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">Analisis sentimen otomatis untuk review produk e-commerce menggunakan NLP. Sistem dapat mengkategorikan feedback pelanggan menjadi positif, negatif, atau netral dengan akurasi 85%.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">NLTK</span>
-                            <span class="tag">TensorFlow</span>
-                            <span class="tag">BERT</span>
-                        </div>
-                        <a href="#" class="project-link">View on GitHub →</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image">📈</div>
+                <div class="project-content">
+                    <h3>Sales Forecasting Dashboard</h3>
+                    <p>
+                        Dashboard interaktif untuk forecasting penjualan dengan time series analysis. 
+                        Memberikan insight untuk inventory planning dan budgeting.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Prophet</span>
+                        <span class="tool-tag">Tableau</span>
+                        <span class="tool-tag">SQL</span>
                     </div>
                 </div>
-
-                <!-- Project 3 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-number">PROJECT 03</div>
-                        <h3 class="project-title">Sales Analytics Dashboard</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">Dashboard interaktif untuk monitoring performa penjualan real-time dengan insights actionable. Dashboard ini digunakan oleh 20+ stakeholder untuk mengambil keputusan bisnis harian.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Power BI</span>
-                            <span class="tag">SQL</span>
-                            <span class="tag">Python</span>
-                            <span class="tag">DAX</span>
-                        </div>
-                        <a href="#" class="project-link">View Dashboard →</a>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-number">PROJECT 04</div>
-                        <h3 class="project-title">Product Recommendation System</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">Sistem rekomendasi produk berbasis collaborative filtering yang meningkatkan cross-selling sebesar 25%. Menggunakan matrix factorization untuk personalisasi rekomendasi.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Surprise</span>
-                            <span class="tag">Flask</span>
-                            <span class="tag">Redis</span>
-                        </div>
-                        <a href="#" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-number">PROJECT 05</div>
-                        <h3 class="project-title">Time Series Forecasting</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">Model forecasting untuk prediksi demand produk menggunakan ARIMA dan LSTM. Membantu tim supply chain dalam planning inventory dengan akurasi prediksi 92%.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Prophet</span>
-                            <span class="tag">LSTM</span>
-                            <span class="tag">Statsmodels</span>
-                        </div>
-                        <a href="#" class="project-link">View on GitHub →</a>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-number">PROJECT 06</div>
-                        <h3 class="project-title">Customer Segmentation</h3>
-                    </div>
-                    <div class="project-content">
-                        <p class="project-description">Segmentasi pelanggan menggunakan clustering algorithm untuk targeted marketing campaign. Berhasil mengidentifikasi 5 segment utama dengan karakteristik yang berbeda.</p>
-                        <div class="tech-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">K-Means</span>
-                            <span class="tag">PCA</span>
-                            <span class="tag">Seaborn</span>
-                        </div>
-                        <a href="#" class="project-link">View on GitHub →</a>
+            </div>
+            <div class="project-card">
+                <div class="project-image">🎯</div>
+                <div class="project-content">
+                    <h3>Recommendation Engine</h3>
+                    <p>
+                        Sistem rekomendasi berbasis collaborative filtering untuk e-commerce platform. 
+                        Meningkatkan click-through rate sebesar 35% dan conversion rate 20%.
+                    </p>
+                    <div class="project-tools">
+                        <span class="tool-tag">Python</span>
+                        <span class="tool-tag">Surprise</span>
+                        <span class="tool-tag">Spark</span>
+                        <span class="tool-tag">AWS</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- 5. Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Get In Touch</div>
-                <h2 class="section-title">Let's Work Together</h2>
-                <p class="contact-description">Tertarik untuk berkolaborasi atau ingin diskusi tentang data science? Jangan ragu untuk menghubungi saya!</p>
+    <!-- Contact Footer Section -->
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Contact</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <strong>Email:</strong>
+                    <a href="mailto:nama@email.com">nama@email.com</a>
+                </div>
+                <div class="contact-item">
+                    <strong>LinkedIn:</strong>
+                    <a href="https://linkedin.com/in/username" target="_blank">linkedin.com/in/username</a>
+                </div>
+                <div class="contact-item">
+                    <strong>GitHub:</strong>
+                    <a href="https://github.com/username" target="_blank">github.com/username</a>
+                </div>
+                <div class="contact-item">
+                    <strong>Phone:</strong>
+                    <span>+62 812-3456-7890</span>
+                </div>
             </div>
-            <div class="contact-links">
-                <a href="mailto:email@example.com" class="contact-link">
-                    <span>📧</span> Email
-                </a>
-                <a href="https://linkedin.com" target="_blank" class="contact-link">
-                    <span>💼</span> LinkedIn
-                </a>
-                <a href="https://github.com" target="_blank" class="contact-link">
-                    <span>💻</span> GitHub
-                </a>
-                <a href="https://wa.me/6281234567890" target="_blank" class="contact-link">
-                    <span>💬</span> WhatsApp
-                </a>
+            <div class="footer-bottom">
+                <p>© 2026 Ni Putu Ayu Sekar Pradnya Dewi. All rights reserved.</p>
             </div>
-            <p class="copyright">© 2026 Your Name. All rights reserved.</p>
         </div>
     </section>
 
     <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function closeMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
+        }
+
+        function downloadCV() {
+            alert('Fitur download CV akan mengunduh file CV Anda. Silakan hubungkan dengan file CV yang sebenarnya.');
+        }
+
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function (e) {
@@ -300,26 +228,14 @@
             });
         });
 
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.skill-card, .timeline-item, .project-card').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navLinks = document.getElementById('navLinks');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (!navLinks.contains(event.target) && !menuBtn.contains(event.target)) {
+                navLinks.classList.remove('active');
+            }
         });
     </script>
 </body>
