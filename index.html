@@ -4,17 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">.
-    <title>Portofolio Data Scientist</title>
+    <title>Tes Anjay</title>
 </head>
 <body>
     <!-- Navbar -->
     <nav>
         <div class="nav-container">
-            <div style="font-weight: bold; font-size: 1.2rem;">AS</div>
             <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="#profile" onclick="closeMenu()">Profile</a></li>
-                <li><a href="#skills" onclick="closeMenu()">Skills</a></li>
+                <li><a href="#aboutme" onclick="closeMenu()">About Me</a></li>
                 <li><a href="#pengalaman" onclick="closeMenu()">Pengalaman</a></li>
                 <li><a href="#portofolio" onclick="closeMenu()">Portofolio</a></li>
                 <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
@@ -26,9 +25,15 @@
     <!-- Profile Section -->
     <section id="profile">
         <div class="profile-content">
-            <div class="profile-image">👤</div>
+            <div class="profile-image">👤
+                    <svg class="blob" viewBox="0 0 200 200">
+                        <path fill="#F2F4F8" d="M35.9,-68.6C43.5,-57.7,44.6,-42.1,47.7,-29.8C50.8,-17.6,55.8,-8.8,61.3,3.2C66.7,15.1,72.7,30.2,66.9,37.9C61.2,45.5,43.8,45.6,30.7,49.9C17.6,54.1,8.8,62.5,-2.6,67.1C-14.1,71.7,-28.2,72.5,-37.7,66.1C-47.2,59.8,-52,46.3,-60.8,34.1C-69.6,21.9,-82.3,10.9,-86.3,-2.3C-90.4,-15.6,-85.8,-31.2,-75.8,-41.3C-65.8,-51.4,-50.4,-56,-36.8,-63.5C-23.3,-71.1,-11.7,-81.6,1.2,-83.7C14.1,-85.9,28.2,-79.6,35.9,-68.6Z" transform="translate(100 100)" />
+                    </svg>
+        
+            <img src="Dummy Headshot.png" alt="Profile Photo">
+            </div>
             <div class="profile-text">
-                <h1>Ni Putu Ayu Sekar Pradnya Dewi</h1>
+                <h1>Ada wong Leon Kennedy Graham</h1>
                 <p>
                     I'm undergraduate Computer Science student at Binus University with a strong passion for data science and data analysis. 
                     I have solid skills in data cleaning, transformation, visualization and modeling. My critical thinking and problem solving skills 
@@ -39,12 +44,18 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
-        <h2>Skills</h2>
+    <section id="aboutme">
+        <div class="Judul-Skills">
+            <h2>About Me</h2> 
+        </div>
         <div class="skills-grid">
             <div class="skill-card">
+                <h3>Data Analysis</h3>
+                <p>Pandas, NumPy, Statistics, A/B Testing</p>
+            </div>
+            <div class="skill-card">
                 <h3>Programming</h3>
-                <p>Python, R, SQL, JavaScript</p>
+                <p>Python, R, SQL</p>
             </div>
             <div class="skill-card">
                 <h3>Machine Learning</h3>
@@ -71,7 +82,10 @@
 
     <!-- Experience Section -->
     <section id="pengalaman">
-        <h2>Pengalaman</h2>
+        <div class="Judul-Exp">
+            <h2>Experience</h2>
+        </div>
+        
         <div class="experience-list">
             <div class="experience-item">
                 <h3>Senior Data Scientist - Perusahaan A</h3>
