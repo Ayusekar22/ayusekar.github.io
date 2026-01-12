@@ -122,16 +122,11 @@
 
         /* Sections */
         section {
-            /* max-width: 1100px; */
+            max-width: 1100px;
             margin: 0 auto;
             padding: 5rem 3rem;
         }
 
-        .container-wrapper {
-            max-width: 1100px;
-            margin: 0 auto;
-            padding: 0 3rem;
-        }
         section:first-of-type {
             margin-top: 80px;
         }
@@ -144,6 +139,8 @@
         h2 {
             font-size: 2rem;
             margin-bottom: 2rem;
+            border-bottom: 3px solid #000000;
+            display: inline-block;
             padding-bottom: 0.5rem;
         }
         
@@ -213,88 +210,40 @@
             color: #626262;
             text-align: justify ;
             
-            
         }
 
-        /* Skills Section */
 
-       /* ABOUT ME */
-        #aboutme {
-            margin-top: 4rem;
-            width: 100%;
-            background-color: #F9FAFB;
-        }
-  
-
-        .about-title {
+    .Judul-Skills{
             text-align: center;
-            font-size: 50px;
-            margin-bottom: 5rem;
+        }
+        
+        .Judul-Skills h2{
+            font-size: 40px;
+
+        }
+           
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
         }
 
-        /* CARD */
-        .about-card {
-            display: flex;
-            max-width: 1100px;
-            margin: auto;
-            border: 2px solid #000;
-        }
-
-        /* LEFT */
-        .about-left {
-            background-color: #000;
-            color: #fff;
-            width: 65%;
+        .skill-card {
+            background-color: #ffffff;
+            border: 2px solid #000000;
             padding: 2rem;
-            padding-bottom: 120px;
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .about-left h3 {
-            margin-bottom: 1.5rem;
-            font-size: 35px;
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 5px 5px 0px #000000;
         }
-
-        /* SKILL PILLS */
-        .skill-pill-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 0.8rem;
-        }
-
-        .skill-pill {
-            border: 1.5px solid #fff;
-            padding: 0.4rem 0.9rem;
-            border-radius: 999px;
-            font-size: 0.85rem;
-            transition: all 0.3s ease;
-        }
-
-        .skill-pill:hover {
-            background-color: #fff;
-            color: #000;
-        }
-
-        /* RIGHT */
-        .about-right {
-            background-color: #fff;
-            color: #000;
-            width: 35%;
-            padding: 2rem;
-            border-left: 2px solid #000;
-        }
-
-        .about-right h3 {
-            margin-bottom: 1.5rem;
-            font-size: 35px
-        }
-
-        .about-right p {
-            margin-bottom: 1.2rem;
-            line-height: 1.5;
-        }
-
-        .skill-card p {
-            color: #555555;
+    
+        .skill-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
         }
 
         /* Experience Section */
@@ -303,7 +252,7 @@
             text-align: center;
         }
         .Judul-Exp h2{
-            font-size: 50px;
+            font-size: 40px;
         }
         .experience-list {
             margin-top: 2rem;
@@ -332,10 +281,6 @@
         }
 
         /* Portfolio Section */
-        #portofolio{
-            background-color: #F9FAFB;
-        }
-
         .portfolio-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -344,17 +289,14 @@
         }
 
         .project-card {
-            /* border: 2px solid #000000; */
+            border: 2px solid #000000;
             overflow: hidden;
             transition: transform 0.3s, box-shadow 0.3s;
-            border-radius: 25px;
-            
         }
 
         .project-card:hover {
             transform: translateY(-5px);
-            box-shadow: 5px 5px 15px #e6e6e6;
-            
+            box-shadow: 5px 5px 0px #000000;
         }
 
         .project-image {
@@ -368,28 +310,9 @@
             border-bottom: 2px solid #000000;
         }
 
-        .project-image img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; 
-            display: block;
-        }
-
-
-
         .project-content {
             padding: 1.5rem;
         }
-
-        .Projects-section{
-            display: block;
-            width: 100%;
-            text-align: center;
-            font-size: 50px;
-            margin-bottom: 2rem;
-        }
-
-   
 
         .project-content h3 {
             font-size: 1.3rem;
@@ -420,19 +343,18 @@
             color: #ffffff;
             max-width: 100%;
             padding: 4rem 2rem 2rem;
-            /* margin-top: 3rem; */
+            margin-top: 3rem;
             text-align: center;
         }
 
         #contact h2 {
             color: #ffffff;
-            font-size: 50px
+            border-bottom: 3px solid #ffffff;
         }
 
         .contact-container {
             max-width: 1100px;
             margin: 0 auto;
- 
     
         }
 
@@ -449,7 +371,6 @@
             align-items: center;
             gap: 1rem;
             font-size: 1.1rem;
-            font-size: 20px;
         }
 
         .contact-item strong {
@@ -461,7 +382,6 @@
             text-decoration: none;
             border-bottom: 2px solid #ffffff;
             transition: opacity 0.3s;
-            
         }
 
         .contact-item a:hover {
