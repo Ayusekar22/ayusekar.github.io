@@ -78,7 +78,7 @@
         }
 
         .btn-download {
-            background-color: #000000;
+            background-color: #DF9A57;
             color: #ffffff;
             padding: 0.6rem 1.5rem;
             border: none;
@@ -123,9 +123,16 @@
         /* Sections */
         section {
             /* max-width: 1100px; */
-            margin: 0 auto;
-            padding: 5rem 3rem;
+            /* margin: 0 auto;
+            padding: 5rem 3rem; */
+
+            padding-top: 6rem;
+            padding-bottom: 6rem;
         }
+        section h2 {
+        margin-bottom: 3rem;
+        }
+
 
         .container-wrapper {
             max-width: 1100px;
@@ -148,6 +155,10 @@
         }
         
         /* Profile Section */
+        #profile{
+            margin-top: 10rem;
+            padding-bottom: 10rem;
+        }
         .profile-content {
             display: flex;
             align-items: center;
@@ -221,6 +232,7 @@
        /* ABOUT ME */
         #aboutme {
             margin-top: 4rem;
+            padding-bottom: 12rem;
             width: 100%;
             background-color: #F9FAFB;
         }
@@ -298,9 +310,12 @@
         }
 
         /* Experience Section */
-
+        #pengalaman{
+            padding-bottom: 10rem;
+        }
         .Judul-Exp{
             text-align: center;
+            margin-bottom: 3rem;
         }
         .Judul-Exp h2{
             font-size: 50px;
@@ -334,6 +349,7 @@
         /* Portfolio Section */
         #portofolio{
             background-color: #F9FAFB;
+            padding-bottom: 12rem;
         }
 
         .portfolio-grid {
@@ -386,7 +402,7 @@
             width: 100%;
             text-align: center;
             font-size: 50px;
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
    
@@ -419,7 +435,8 @@
             background-color: #000000;
             color: #ffffff;
             max-width: 100%;
-            padding: 4rem 2rem 2rem;
+            padding-top: 6rem;
+            padding-bottom: 6rem;
             /* margin-top: 3rem; */
             text-align: center;
         }
