@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>Ayu Sekar's Portofolio</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav-container">
+                <button class="mobile-menu-btn" onclick="toggleMenu()">☰</button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#profile" onclick="closeMenu()">Profile</a></li>
+                    <li><a href="#aboutme" onclick="closeMenu()">About Me</a></li>
+                    <li><a href="#pengalaman" onclick="closeMenu()">Experience</a></li>
+                    <li><a href="#portofolio" onclick="closeMenu()">Projects</a></li>
+                    <li><a href="#contact" onclick="closeMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="profile-section">
+            <div class="profile-image">
+                <img src="headshot.jpg" alt="Profile">
+            </div>
+            <div class="profile-info">
+                <h2>Hi,</h2>
+                <h1>I'm<span> Ayu Sekar</span></h1>
+                <p>I'm undergraduate Computer Science student at Binus University with a strong passion for data science and data analysis. 
+                        I have solid skills in data cleaning, transformation, visualization and modeling. My critical thinking and problem solving skills 
+                        enabling me to identify and solve data-related problems effectively. </p>
+                <div class="profile-btn">
+                        <a href="#" class="btn-primary">Download CV</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="Garis">
+            
+        </div>
+
+         <section>
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"></div>
+                        <span class="skill-name">Programming Language</span>
+                    </div>
+                    <div class="skill-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">SQL</span>
+                        <span class="tag">R</span>
+                    </div>
+   
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"></div>
+                        <span class="skill-name">Machine Learning</span>
+                    </div>
+                     <div class="skill-tags">
+                        <span class="tag">Pytorch</span>
+                        <span class="tag">Scikit-learn</span>
+                        <span class="tag">Pyspark</span>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"></div>
+                        <span class="skill-name">Data visualization</span>
+                    </div>
+                     <div class="skill-tags">
+                        <span class="tag">Tableau</span>
+                        <span class="tag">PowerBI</span>
+                        <span class="tag">Metabase</span>
+                    </div>
+                    
+                </div>
+
+                 <div class="skill-card">
+                    <div class="skill-header">
+                        <div class="skill-icon"></div>
+                        <span class="skill-name">Language</span>
+                    </div>
+                     <div class="skill-tags">
+                        <span class="tag">Bahasa</span>
+                        <span class="tag">English</span>
+        
+                    </div>
+                </div>
+
+          
+            </div>
+        </section>
+    
+        <!-- <section class="Experience">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <h3>Web Developer</h3>
+                    <p>Jan 2018 - Apr 2020</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-right">
+                    <h4>Envato Freelancer</h4>
+                    <p>At Envato, I have created and sold various WordPress themes and plugins to the community</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <h3>Online Marketing</h3>
+                    <p>Apr 2020 - Aug 2021</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-right">
+                    <h4>Sr. Developer</h4>
+                    <p>Help analyze the latest SEO optimization for growth on search engines</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <h3>UI/UX Designer</h3>
+                    <p>Aug 2021 - Present</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-right">
+                    <h4>Dribble</h4>
+                    <p>All Dribble is quite popular now as a designer helping to publish portfolio results</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-left">
+                    <h3>Upwork Starter</h3>
+                    <p>Jan 2022 - Present</p>
+                </div>
+                <div class="timeline-dot"></div>
+                <div class="timeline-right">
+                    <h4>UI Developer</h4>
+                    <p>Helping the Upwork market for graphic arts as a designer</p>
+                </div>
+            </div>
+        </section> -->
+
+        <section class="Experience" id="pengalaman">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="experience-container">
+                
+                <div class="exp-card">
+                    <div class="garis-merah"></div>
+
+
+                    <div class="exp-header">
+                        <h3>Web Developer</h3>
+                        <span class="exp-date">Jan 2018 - Apr 2020</span>
+                    </div>
+                    <p class="exp-company">Envato Freelancer</p>
+                    <p class="exp-desc">At Envato, I have created and sold various WordPress themes and plugins to the community.</p>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>Online Marketing</h3>
+                        <span class="exp-date">Apr 2020 - Aug 2021</span>
+                    </div>
+                    <p class="exp-company">Sr. Developer</p>
+                    <p class="exp-desc">Help analyze the latest SEO optimization for growth on search engines.</p>
+                </div>
+
+                <div class="exp-card">
+                    <div class="exp-header">
+                        <h3>UI/UX Designer</h3>
+                        <span class="exp-date">Aug 2021 - Present</span>
+                    </div>
+                    <p class="exp-company">Dribble</p>
+                    <p class="exp-desc">All Dribble is quite popular now as a designer helping to publish portfolio results.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="Projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <span class="testimonial-name">Great Advice</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">This would be one of them website could be very easy for designers to highlight the best!</p>
+                    <p class="testimonial-role">Best Kilson</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <span class="testimonial-name">Design Quality</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">This would look an alternative to some great designers to highlight their vision!</p>
+                    <p class="testimonial-role">Tom Hejda</p>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <span class="testimonial-name">Great Solution</span>
+                        <span class="stars">⭐⭐⭐⭐⭐</span>
+                    </div>
+                    <p class="testimonial-text">This website would be them website could very easy for layout the some great!</p>
+                    <p class="testimonial-role">Jimmy Deep</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-icon">👋</div>
+            <h3>If you have any project in mind?</h3>
+            <p>DM now! contact@fixita.com</p>
+            <a href="mailto:contact@fixita.com" class="btn-contact">Contact Me</a>
+        </section>
+    </div>
+</body>
+</html>

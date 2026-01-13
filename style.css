@@ -7,8 +7,10 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #ffffff;
-            color: #000000;
+            /* background-color: #ffffff;
+            color: #000000; */
+            /* background: linear-gradient(135deg, #ffffff 0%, #fff5f5 50%, #ffffff 100%);
+            background-attachment: fixed; Background tetap diam saat di-scroll */
             line-height: 1.6;
             opacity: 0;
             transform: translateY(30px); 
@@ -21,17 +23,30 @@
                 transform: translateY(0);
             }
         }
+        #Aboutme, #Experience, #Projects{
+            margin: 100000px, 0, 10px, 0;
+
+        }
 
         /* Navbar */
-        nav {
-            position: relative;
-            top: 0;
-            width: 100%;
-            background-color: #ffffff;
-            /* box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); */
-            z-index: 1000;
-            padding: 0 2rem;
-        }
+       nav {
+        position: fixed;
+        top: 0;
+        left: 50%; /* Pindahkan titik awal ke tengah layar */
+        transform: translateX(-50%); /* Geser balik ke kiri sebesar setengah lebar nav sendiri */
+        width: 100%;
+        max-width: 1100px; /* Lebar maksimal yang kamu inginkan */
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+        padding: 1rem 2rem;
+        
+        /* Tambahan agar terlihat lebih rapi */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 0 15px 15px; /* Opsional: buat sudut bawah sedikit melengkung agar estetik */
+    }
 
         .nav-container {
             max-width: 1100px;
@@ -77,18 +92,6 @@
             transform: translateY(-2px);
         }
 
-        .btn-download {
-            background-color: #DF9A57;
-            color: #ffffff;
-            padding: 0.6rem 1.5rem;
-            border: none;
-            cursor: pointer;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            position: relative;
-            overflow: hidden;
-        }
-
         .btn-download::before {
             content: '';
             position: absolute;
@@ -122,18 +125,12 @@
 
         /* Sections */
         section {
-            /* max-width: 1100px; */
-            /* margin: 0 auto;
-            padding: 5rem 3rem; */
-
             padding-top: 6rem;
             padding-bottom: 6rem;
         }
         section h2 {
         margin-bottom: 3rem;
         }
-
-
         .container-wrapper {
             max-width: 1100px;
             margin: 0 auto;
@@ -156,8 +153,10 @@
         
         /* Profile Section */
         #profile{
-            margin-top: 10rem;
             padding-bottom: 10rem;
+            background-color: #F9FAFB;
+            /* background: linear-gradient(180deg, #FFFFFF 0%, #FFF5F5 100%);
+            min-height: 100vh; */
         }
         .profile-content {
             display: flex;
@@ -171,7 +170,7 @@
             position: relative;
             width: 300px;
             height: 300px;
-            flex-shrink: 0; /* penting supaya tidak dorong teks */
+            flex-shrink: 0;
         }
 
         /* Blob SVG */
@@ -227,6 +226,28 @@
             
         }
 
+        .profile-btn{
+            margin-top: 25px;
+            display: flex;
+        }
+
+        .btn-primary{
+            display: inline-block; /* Agar padding bekerja dengan baik */
+            padding: 12px 48px;
+            background-color: #EF5D60;
+            color: white;
+            border: 2px solid #EF5D60;
+            border-radius: 8px; /* Membuat sudut tumpul */
+            text-decoration: none; /* Menghilangkan garis bawah link */
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+
+        .btn-primary:hover {
+            transform: translateY(-5px);
+        }
+
         /* Skills Section */
 
        /* ABOUT ME */
@@ -234,7 +255,7 @@
             margin-top: 4rem;
             padding-bottom: 12rem;
             width: 100%;
-            background-color: #F9FAFB;
+            /* background-color: #F9FAFB; */
         }
   
 
@@ -348,7 +369,7 @@
 
         /* Portfolio Section */
         #portofolio{
-            background-color: #F9FAFB;
+            /* background-color: #F9FAFB; */
             padding-bottom: 12rem;
         }
 
