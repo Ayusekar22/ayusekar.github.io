@@ -1,11 +1,10 @@
 :root {
-  /* Updated colors to match GoPidge reference - dark purple theme */
   --color-bg: #0f0a19;
   --color-bg-light: rgba(255, 255, 255, 0.03);
   --color-bg-lighter: rgba(124, 58, 237, 0.15);
-  --color-primary: #a78bfa; /* Light purple for text accents */
+  --color-primary: #a78bfa;
   --color-primary-glow: #c4b5fd;
-  --color-primary-solid: #7c3aed; /* Solid purple for buttons */
+  --color-primary-solid: #7c3aed; 
   --color-text: #e2e8f0;
   --color-text-muted: #94a3b8;
   --color-white: #ffffff;
@@ -28,7 +27,6 @@ body {
 
   
   font-family: var(--font-family);
-  /* Gunakan warna yang lebih kontras agar gradasi terlihat jelas */
   background: 
     /* radial-gradient(circle at 80% 20%, rgba(99, 85, 216, 0.15) 0%, transparent 40%), 
     radial-gradient(circle at 20% 80%, rgba(45, 27, 105, 0.2) 0%, transparent 40%),
@@ -59,9 +57,8 @@ img {
   display: block;
 }
 
-/* ==================== */
 /* Container */
-/* ==================== */
+
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -77,16 +74,14 @@ img {
   background-color: transparent !important;
 }
 
-/* ==================== */
 /* Navbar */
-/* ==================== */
+
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  /* Updated navbar bg to match dark purple theme */
   background-color: rgba(15, 10, 25, 0.95);
   padding: 16px 0;
   transition: var(--transition);
@@ -186,9 +181,7 @@ img {
   top: 8px;
 }
 
-/* ==================== */
 /* Hero Section */
-/* ==================== */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -257,7 +250,6 @@ img {
 }
 
 .btn-primary {
-  /* Updated button to solid purple like GoPidge */
   background: #7c3aed;
   color: white;
   box-shadow: 0 4px 15px rgba(124, 58, 237, 0.4);
@@ -316,7 +308,6 @@ img {
   left: 20px;
   width: 100%;
   height: 100%;
-  /* Updated border to purple */
   border: 2px solid #7c3aed;
   border-radius: 8px;
   transition: var(--transition);
@@ -341,72 +332,47 @@ img {
   filter: grayscale(0%);
 }
 
-/* ==================== */
 /* Section Styles */
-/* ==================== */
 .section {
   padding: 100px 0;
 }
 
 .section-title {
-  /* font-size: 2rem;
-  font-weight: 700;
-  color: var(--color-white);
-  margin-bottom: 12px;
-  display: flex;
-  align-items: center;
-  gap: 16px; */
   font-size: 2rem;
   font-weight: 700;
   color: var(--color-white);
   margin-bottom: 12px;
-  
-  /* PERBAIKAN: */
   display: flex;
-  flex-direction: column; /* Mengatur teks dan garis secara vertikal */
-  align-items: center;    /* Menengahkan konten secara horizontal */
-  text-align: center;     /* Menengahkan teks */
+  flex-direction: column; 
+  align-items: center;    
+  text-align: center;    
   gap: 8px;
 }
 
 .section-title::after {
-  /* content: "";
-  flex: 1;
-  height: 1px;
-  background-color: var(--color-bg-lighter);
-  max-width: 300px; */
   content: "";
-  width: 80px;            /* Ukuran garis jangan terlalu panjang */
-  height: 1px;            /* Sedikit lebih tebal agar terlihat sebagai aksen */
-  background-color: var(--color-primary-solid); /* Gunakan warna ungu primer */
-  flex: none;             /* Matikan flex:1 agar ukurannya tetap */
+  width: 80px;        
+  height: 1px;            
+  background-color: var(--color-primary-solid); 
+  flex: none;     
   max-width: none;
   border-radius: 2px;
 }
 
 .section-subtitle {
-  /* color: var(--color-text-muted);
-  font-size: 1rem;
-  margin-bottom: 48px; */
+
   color: var(--color-text-muted);
   font-size: 1rem;
   margin-bottom: 48px;
-  
-  /* TAMBAHKAN INI: */
   text-align: center;
 }
 
-/* ==================== */
 /* Skills Section */
-/* ==================== */
-/* ==================== */
-/* Skills Section */
-/* ==================== */
+
 .skills {
   background-color: var(--color-bg);
 }
 
-/* New tabbed skills styles */
 .skills-tabs {
   display: flex;
   justify-content: center;
@@ -506,7 +472,7 @@ img {
   width: 100%;
 }
 
-/* Remove old skills grid styles - keeping for backwards compatibility but hidden */
+
 .skills-grid {
   display: none;
 }
@@ -516,7 +482,7 @@ img {
   border-radius: 8px;
   padding: 32px;
   transition: var(--transition);
-  /* Added subtle purple border */
+
   border: 1px solid rgba(124, 58, 237, 0.1);
 }
 
@@ -564,10 +530,7 @@ img {
   text-align: center;
 }
 
-
-/* ==================== */
 /* Experience Section */
-/* ==================== */
 .experience {
   background-color: var(--color-bg-light);
 }
@@ -587,7 +550,6 @@ img {
   border-radius: 8px;
   transition: var(--transition);
   position: relative;
-  /* Added subtle purple border */
   border: 1px solid rgba(124, 58, 237, 0.1);
 }
 
@@ -598,7 +560,6 @@ img {
   top: 0;
   bottom: 0;
   width: 2px;
-  /* Updated line to purple */
   background-color: rgba(124, 58, 237, 0.3);
 }
 
@@ -631,25 +592,19 @@ img {
   text-decoration: underline;
 }
 
-/* .timeline-description {
-  color: var(--color-text-muted);
-  font-size: 0.95rem;
-  margin-bottom: 16px;
-  line-height: 1.7;
-} */
 
 .timeline-description-list {
     margin-top: 10px;
-    padding-left: 20px; /* Memberi ruang untuk simbol bullet */
+    padding-left: 20px; 
     color: var(--color-text-muted);
     font-size: 0.95rem;
     line-height: 1.7;
     margin-bottom: 16px;
-    list-style-type: disc; /* Memunculkan simbol titik */
+    list-style-type: disc; 
 }
 
 .timeline-description-list li {
-    margin-bottom: 8px; /* Jarak antar poin */
+    margin-bottom: 8px; 
     text-align: justify;
 }
 
@@ -660,7 +615,7 @@ img {
 }
 
 .tag {
-  /* Updated tag colors to purple theme */
+
   background-color: rgba(124, 58, 237, 0.15);
   color: var(--color-primary);
   padding: 4px 12px;
@@ -669,9 +624,8 @@ img {
   font-weight: 500;
 }
 
-/* ==================== */
 /* Projects Section */
-/* ==================== */
+
 .projects {
   background-color: var(--color-bg);
 }
@@ -687,7 +641,6 @@ img {
   border-radius: 8px;
   overflow: hidden;
   transition: var(--transition);
-  /* Added subtle purple border */
   border: 1px solid rgba(124, 58, 237, 0.1);
 }
 
@@ -720,7 +673,6 @@ img {
   left: 0;
   right: 0;
   bottom: 0;
-  /* Updated overlay to dark purple */
   background-color: rgba(15, 10, 25, 0.85);
   display: flex;
   align-items: center;
@@ -747,7 +699,6 @@ img {
 }
 
 .project-link:hover {
-  /* Updated hover to purple */
   background-color: #7c3aed;
   color: white;
   transform: scale(1.1);
@@ -777,9 +728,8 @@ img {
   gap: 8px;
 }
 
-/* ==================== */
 /* Publications Section */
-/* ==================== */
+
 .publications {
   background-color: var(--color-bg-light);
 }
@@ -798,7 +748,6 @@ img {
   background-color: var(--color-bg-light);
   border-radius: 8px;
   transition: var(--transition);
-  /* Added subtle purple border */
   border: 1px solid rgba(124, 58, 237, 0.1);
 }
 
@@ -859,9 +808,7 @@ img {
   text-decoration: underline;
 }
 
-/* ==================== */
 /* Contact Section */
-/* ==================== */
 .contact {
   background-color: var(--color-bg);
 }
@@ -917,7 +864,6 @@ img {
 
 .form-input {
   background-color: var(--color-bg-light);
-  /* Updated border to purple tint */
   border: 1px solid rgba(124, 58, 237, 0.2);
   border-radius: 6px;
   padding: 14px 16px;
@@ -933,7 +879,6 @@ img {
 
 .form-input:focus {
   outline: none;
-  /* Updated focus to purple */
   border-color: #7c3aed;
   box-shadow: 0 0 0 3px rgba(124, 58, 237, 0.15);
 }
@@ -943,14 +888,12 @@ img {
   min-height: 120px;
 }
 
-/* ==================== */
 /* Footer */
-/* ==================== */
+
 .footer {
   background-color: var(--color-bg-light);
   padding: 40px 0;
   text-align: center;
-  /* Added top border */
   border-top: 1px solid rgba(124, 58, 237, 0.1);
 }
 
@@ -964,10 +907,7 @@ img {
   color: var(--color-text-muted);
   font-size: 0.8rem;
 }
-
-/* ==================== */
 /* Responsive Design */
-/* ==================== */
 @media (max-width: 1024px) {
   .hero-container {
     grid-template-columns: 1fr;

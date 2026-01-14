@@ -1,6 +1,5 @@
-// ==================== //
 // DOM Elements
-// ==================== //
+
 const navbar = document.getElementById("navbar")
 const navToggle = document.getElementById("nav-toggle")
 const navMenu = document.getElementById("nav-menu")
@@ -8,9 +7,8 @@ const navLinks = document.querySelectorAll(".nav-link")
 const contactForm = document.getElementById("contact-form")
 const sections = document.querySelectorAll("section[id]")
 
-// ==================== //
 // Mobile Navigation Toggle
-// ==================== //
+
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active")
   navMenu.classList.toggle("active")
@@ -32,9 +30,8 @@ document.addEventListener("click", (e) => {
   }
 })
 
-// ==================== //
 // Navbar Scroll Effect
-// ==================== //
+
 let lastScroll = 0
 
 window.addEventListener("scroll", () => {
@@ -49,9 +46,8 @@ window.addEventListener("scroll", () => {
   lastScroll = currentScroll
 })
 
-// ==================== //
 // Active Navigation Link on Scroll
-// ==================== //
+
 function setActiveNavLink() {
   const scrollPosition = window.scrollY + 100
 
@@ -74,9 +70,8 @@ function setActiveNavLink() {
 window.addEventListener("scroll", setActiveNavLink)
 window.addEventListener("load", setActiveNavLink)
 
-// ==================== //
 // Smooth Scroll for Navigation Links
-// ==================== //
+
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault()
@@ -93,9 +88,8 @@ navLinks.forEach((link) => {
   })
 })
 
-// ==================== //
+
 // Scroll Reveal Animation
-// ==================== //
 function revealOnScroll() {
   const elements = document.querySelectorAll(".skill-category, .timeline-item, .project-card, .publication-card")
   const windowHeight = window.innerHeight
@@ -148,9 +142,9 @@ document.head.appendChild(style)
 window.addEventListener("scroll", revealOnScroll)
 window.addEventListener("load", revealOnScroll)
 
-// ==================== //
+
 // Contact Form Handling
-// ==================== //
+
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault()
 
@@ -189,11 +183,9 @@ function isValidEmail(email) {
   return emailRegex.test(email)
 }
 
-// ==================== //
-// Notification System
-// ==================== //
+// Notification
+
 function showNotification(message, type) {
-  // Remove existing notification
   const existingNotification = document.querySelector(".notification")
   if (existingNotification) {
     existingNotification.remove()
@@ -259,9 +251,8 @@ function showNotification(message, type) {
   }, 3000)
 }
 
-// ==================== //
-// Typing Effect for Hero Title
-// ==================== //
+// Typing Effect for Role Title
+
 function typeWriter(element, text, speed = 100) {
   let i = 0
   element.textContent = ""
@@ -288,9 +279,9 @@ window.addEventListener("load", () => {
   }
 })
 
-// ==================== //
-// Parallax Effect for Hero
-// ==================== //
+
+// Parallax Effect forProfile
+
 window.addEventListener("scroll", () => {
   const hero = document.querySelector(".hero")
   const scrolled = window.pageYOffset
@@ -304,21 +295,21 @@ window.addEventListener("scroll", () => {
 // Skill Item Hover Effect
 // ==================== //
 
-        // Skills tab functionality
-        const skillTabs = document.querySelectorAll('.skill-tab');
-        const skillPanels = document.querySelectorAll('.skill-panel');
+// Skills tab functionality
+const skillTabs = document.querySelectorAll('.skill-tab');
+const skillPanels = document.querySelectorAll('.skill-panel');
 
-        skillTabs.forEach(tab => {
-            tab.addEventListener('click', () => {
+skillTabs.forEach(tab => {
+  tab.addEventListener('click', () => {
                 // Remove active class from all tabs and panels
-                skillTabs.forEach(t => t.classList.remove('active'));
-                skillPanels.forEach(p => p.classList.remove('active'));
+  skillTabs.forEach(t => t.classList.remove('active'));
+  skillPanels.forEach(p => p.classList.remove('active'));
                 
                 // Add active class to clicked tab and corresponding panel
-                tab.classList.add('active');
-                const panelId = tab.getAttribute('data-tab');
-                document.getElementById(panelId).classList.add('active');
-            });
-        });
+  tab.classList.add('active');
+  const panelId = tab.getAttribute('data-tab');
+  document.getElementById(panelId).classList.add('active');
+    });
+});
 
 
