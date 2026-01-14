@@ -1,313 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Ayu Sekar's Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ayu Sekar's Portofolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">AS</a>
+            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu" id="nav-menu">
+                <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#publications" class="nav-link">Publications</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
 
-  <!-- Navbar -->
-  <nav class="navbar">
-    <div class="container">
-      <a href="#" class="logo">AS.</a>
-      <ul class="nav-links">
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&h=400&fit=crop" alt="Ayu Sekar" class="hero-image">
-      <div class="hero-content">
-        <p class="hero-greeting">Hi, I'm</p>
-        <h1 class="hero-name">Ayu Sekar</h1>
-        <p class="hero-title">Data Scientist</p>
-        <p class="hero-bio">
-          I'm an undergraduate Computer Science student at Binus University with a strong passion for data science and data analysis. I have solid skills in data cleaning, transformation, visualization and modeling.
-        </p>
-        <div class="hero-buttons">
-          <button class="btn btn-primary">Download CV</button>
-          <button class="btn btn-secondary">Contact Me</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2 class="section-title">My Skills</h2>
-      <p class="section-subtitle">Technologies and tools I work with</p>
-      
-      <div class="skills-wrapper">
-        <div class="progress-bar-container">
-          <div class="progress-bar animating" id="progressBar"></div>
-        </div>
-        
-        <div class="skill-tabs">
-          <button class="skill-tab active" data-tab="programming">Programming</button>
-          <button class="skill-tab" data-tab="ml">Machine Learning</button>
-          <button class="skill-tab" data-tab="visualization">Data Visualization</button>
-          <button class="skill-tab" data-tab="tools">Data Tools</button>
-          <button class="skill-tab" data-tab="language">Language</button>
-        </div>
-
-        <div class="skill-content active" id="programming">
-          <span class="skill-tag">Python</span>
-          <span class="skill-tag">SQL</span>
-          <span class="skill-tag">R</span>
-          <span class="skill-tag">JavaScript</span>
-        </div>
-        <div class="skill-content" id="ml">
-          <span class="skill-tag">TensorFlow</span>
-          <span class="skill-tag">PyTorch</span>
-          <span class="skill-tag">Scikit-learn</span>
-          <span class="skill-tag">Keras</span>
-        </div>
-        <div class="skill-content" id="visualization">
-          <span class="skill-tag">Tableau</span>
-          <span class="skill-tag">Power BI</span>
-          <span class="skill-tag">Matplotlib</span>
-          <span class="skill-tag">Seaborn</span>
-        </div>
-        <div class="skill-content" id="tools">
-          <span class="skill-tag">Pandas</span>
-          <span class="skill-tag">NumPy</span>
-          <span class="skill-tag">Apache Spark</span>
-          <span class="skill-tag">Jupyter</span>
-        </div>
-        <div class="skill-content" id="language">
-          <span class="skill-tag">Indonesian</span>
-          <span class="skill-tag">English</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experience Section -->
-  <section id="experience">
-    <div class="container">
-      <h2 class="section-title">Work Experience</h2>
-      <p class="section-subtitle">My professional journey</p>
-      
-      <div class="experience-list">
-        <div class="experience-card">
-          <div class="experience-header">
-            <h3 class="experience-role">Data Scientist</h3>
-            <span class="experience-date">Jan 2024 - Present</span>
-          </div>
-          <p class="experience-company">Tech Company Inc.</p>
-          <p class="experience-desc">Developed machine learning models for customer churn prediction, improving retention rates by 25%. Built automated data pipelines using Python and Apache Airflow.</p>
-        </div>
-        
-        <div class="experience-card">
-          <div class="experience-header">
-            <h3 class="experience-role">Data Analyst Intern</h3>
-            <span class="experience-date">Jun 2023 - Dec 2023</span>
-          </div>
-          <p class="experience-company">Analytics Startup</p>
-          <p class="experience-desc">Analyzed large datasets to identify business insights. Created interactive dashboards using Tableau for executive reporting.</p>
-        </div>
-        
-        <div class="experience-card">
-          <div class="experience-header">
-            <h3 class="experience-role">Research Assistant</h3>
-            <span class="experience-date">Jan 2023 - May 2023</span>
-          </div>
-          <p class="experience-company">Binus University</p>
-          <p class="experience-desc">Assisted in NLP research project focusing on sentiment analysis of Indonesian social media data.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects">
-    <div class="container">
-      <h2 class="section-title">My Projects</h2>
-      <p class="section-subtitle">Some things I've built</p>
-      
-      <div class="projects-grid">
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);"></div>
-          <div class="project-content">
-            <h3 class="project-title">Customer Churn Prediction</h3>
-            <p class="project-desc">ML model to predict customer churn using ensemble methods with 92% accuracy.</p>
-            <div class="project-tags">
-              <span class="project-tag">Python</span>
-              <span class="project-tag">Scikit-learn</span>
-              <span class="project-tag">XGBoost</span>
+    <!-- Hero / Profile Section -->
+    <section class="hero" id="about">
+        <div class="hero-container">
+            <div class="hero-content">
+                <p class="hero-greeting">Hi, I'm</p>
+                <h1 class="hero-name">Ayu Sekar</h1>
+                <h2 class="hero-title">Data Scientist</h2>
+                <p class="hero-description">
+                    Data Enthusiast | CS Student at Binus University I bridge the gap between complex data and strategic insights. 
+                    Skilled in the full data lifecycle—from cleaning to visualization with a sharp focus on effective problem-solving and database management.
+                </p>
+                <div class="hero-buttons">
+                    <a href="https://drive.google.com/drive/folders/1b32fKbT15JJA2vWkN0_c219qkA12aH0g" class="btn btn-primary">Download CV</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://github.com/Ayusekar22" class="social-link" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/ayusekar22/" class="social-link" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                </div>
             </div>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);"></div>
-          <div class="project-content">
-            <h3 class="project-title">Sentiment Analysis Dashboard</h3>
-            <p class="project-desc">Real-time sentiment analysis of social media data with interactive visualizations.</p>
-            <div class="project-tags">
-              <span class="project-tag">NLP</span>
-              <span class="project-tag">Streamlit</span>
-              <span class="project-tag">BERT</span>
+            <div class="hero-image">
+                <div class="profile-image-wrapper">
+                    <img src="Gambar/headshot.jpg" alt="Profile Photo" class="profile-image">
+                </div>
             </div>
-          </div>
         </div>
-        
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);"></div>
-          <div class="project-content">
-            <h3 class="project-title">Sales Forecasting</h3>
-            <p class="project-desc">Time series forecasting model for retail sales prediction using LSTM networks.</p>
-            <div class="project-tags">
-              <span class="project-tag">TensorFlow</span>
-              <span class="project-tag">LSTM</span>
-              <span class="project-tag">Pandas</span>
+    </section>
+
+    <section class="section skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <p class="section-subtitle">Technologies and tools I work with</p>
+            
+            <!-- New tabbed skills interface -->
+            <div class="skills-tabs">
+                <button class="skill-tab active" data-tab="programming">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                    Programming
+                </button>
+                <button class="skill-tab" data-tab="machine-learning">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    Machine Learning
+                </button>
+                <button class="skill-tab" data-tab="data-visualization">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"></line><line x1="12" y1="20" x2="12" y2="4"></line><line x1="6" y1="20" x2="6" y2="14"></line></svg>
+                    Data Visualization
+                </button>
+                <button class="skill-tab" data-tab="language">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                    Language
+                </button>
             </div>
-          </div>
-        </div>
-        
-        <div class="project-card">
-          <div class="project-image" style="background: linear-gradient(135deg, #1e293b 0%, #334155 100%);"></div>
-          <div class="project-content">
-            <h3 class="project-title">Data Pipeline Automation</h3>
-            <p class="project-desc">Automated ETL pipeline for processing and transforming large datasets daily.</p>
-            <div class="project-tags">
-              <span class="project-tag">Airflow</span>
-              <span class="project-tag">SQL</span>
-              <span class="project-tag">Docker</span>
+            
+            <div class="skills-content">
+                <div class="skill-panel active" id="programming">
+                    <div class="skill-list">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">SQL</span>
+                        <span class="skill-tag">R</span>
+                    </div>
+                </div>
+                <div class="skill-panel" id="machine-learning">
+                    <div class="skill-list">
+                        <span class="skill-tag">TensorFlow</span>
+                        <span class="skill-tag">PyTorch</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Keras</span>
+                        <span class="skill-tag">OpenCV</span>
+                        <span class="skill-tag">NLP</span>
+                    </div>
+                </div>
+                <div class="skill-panel" id="data-visualization">
+                    <div class="skill-list">
+                        <span class="skill-tag">Matplotlib</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Plotly</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Power BI</span>
+                    </div>
+                </div>
+                <div class="skill-panel" id="language">
+                    <div class="skill-list">
+                        <span class="skill-tag">Indonesian</span>
+                        <span class="skill-tag">English</span>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Publications Section -->
-  <section id="publications">
-    <div class="container">
-      <h2 class="section-title">Publications</h2>
-      <p class="section-subtitle">My academic contributions</p>
-      
-      <div class="publications-list">
-        <div class="publication-card">
-          <div>
-            <h3 class="publication-title">Deep Learning Approach for Indonesian Sentiment Analysis on Social Media</h3>
-            <p class="publication-meta">International Conference on Data Science 2024 • Ayu Sekar, et al.</p>
-          </div>
-          <span class="publication-citations">15 citations</span>
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <p class="section-subtitle">My Professional Experience</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2 Feb 2025 — 31 Jan 2026</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Functional Consultant Intern · <a href="#" class="company-link">Toba Consulting Services</a></h3>
+                          <ul class="timeline-description-list">
+                            <li>Translated strategic business requirements from stakeholders into functional system specifications, ensuring critical business metrics were integrated into the ERP data architecture.</li>
+                            <li>Managed the system implementation lifecycle from prototyping to the Go-Live phase, ensuring full user adoption and successful automation of real-time operational reporting.</li>
+                        </ul>
+                        <!-- <div class="timeline-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React</span>
+                            <span class="tag">Next.js</span>
+                        </div> -->
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2022 — 2024</div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">General Manager of Public Relation · <a href="#" class="company-link">HIMTI BINUS</a></h3>
+                            <ul class="timeline-description-list">
+                              <li>Develop and maintain collaborative relationships with media partners and external organizations,
+                                  increasing exposure and support for HIMTI programs.</li>
+                              <li>Oversee and assess content from each social media division to ensure alignment with branding
+                                  strategy and organizational goals.</li>
+                            </ul>
+                        <!-- <div class="timeline-tags">
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">PostgreSQL</span>
+                            <span class="tag">AWS</span>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
         </div>
-        
-        <div class="publication-card">
-          <div>
-            <h3 class="publication-title">Comparative Study of Machine Learning Models for Customer Churn Prediction</h3>
-            <p class="publication-meta">Journal of Data Analytics 2023 • Ayu Sekar, et al.</p>
-          </div>
-          <span class="publication-citations">8 citations</span>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <p class="section-subtitle">Recent projects</p>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Gambar/Weather Prediction.png" alt="Jakarta Weather Prediction">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Ayusekar22/Jakarta-Weather-Prediction-2025" class="project-link" aria-label="View Project">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                            <a href="https://github.com/Ayusekar22/Student-Depression-Analysis" class="project-link" aria-label="View Code">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Jakarta-Weather-Prediction-2025</h3>
+                        <p class="project-description">
+                          Central Jakarta Rainfall Prediction using a Two-Stage Approach, combining Random Forest for rain classification and XGBoost for precipitation volume regression.<div class="project-tags">
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandass</span>
+                            <span class="tag">Machine Learning</span>
+                        </div>
+                    </div>
+                </article>
+                
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="Gambar/Student Depression.png" alt="Task Management App">
+                        <div class="project-overlay">
+                            <a href="https://github.com/Ayusekar22/Student-Depression-Analysis" class="project-link" aria-label="View Project">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                            </a>
+                            <a href="https://github.com/Ayusekar22/Student-Depression-Analysis" class="project-link" aria-label="View Code">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 class="project-title">Student Depression Analysis</h3>
+                        <p class="project-description">
+                         Identifying key risk factors and implementing Random Forest and XGBoost models for high-accuracy classification.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Pandass</span>
+                            <span class="tag">Machine Learning</span> 
+                        </div>
+                    </div>
+                </article>
+               
+            </div>
         </div>
-        
-        <div class="publication-card">
-          <div>
-            <h3 class="publication-title">Time Series Forecasting Using Hybrid ARIMA-LSTM Model</h3>
-            <p class="publication-meta">IEEE Conference on AI 2023 • Ayu Sekar, et al.</p>
-          </div>
-          <span class="publication-citations">12 citations</span>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="section publications" id="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <p class="section-subtitle">Published papers and articles</p>
+            
+            <div class="publications-list">
+                <article class="publication-card">
+                    <div class="publication-year">2025</div>
+                    <div class="publication-content">
+                        <h3 class="publication-title">
+                            <a href="#">Lightweight Yolov8n Segmentation and ShuffleNetV2 Transfer Learning Integration for Oil Palm Fruit Ripeness Classification</a>
+                        </h3>
+                        <p class="publication-authors">Ni Putu Ayu Sekar Pradnya Dewi, Nicholas Farandi Harjanto, Irene Anindaputri Iswanto</p>
+                        <p class="publication-venue">The 8th International Conference on Information and Communications Technology 2025</p>
+                        <div class="publication-links">
+                            <a href="#" class="publication-link">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                PDF
+                            </a>
+                        </div>
+                    </div>
+                </article>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2 class="section-title">Get In Touch</h2>
-      <p class="contact-text">
-        I'm currently looking for new opportunities. Whether you have a question or just want to say hi, feel free to reach out!
-      </p>
-      <a href="mailto:ayu.sekar@email.com" class="contact-email">ayu.sekar@email.com</a>
-      <button class="btn btn-primary">Say Hello</button>
-    </div>
-  </section>
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <p class="section-subtitle">Interested in working together? Let's connect!</p>
+            
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <p class="contact-text">
+                        I'm always open to new opportunities, interesting projects, or just a friendly chat about technology. Feel free to reach out!
+                    </p>
+                    <div class="contact-details">
+                        <a href="mailto:ayusekar1822@gmail.com" class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            Ayusekar1822@gmail.com
+                        </a>
+                        <a href="https://www.linkedin.com/in/ayusekar22/" class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            LinkedIn
+                        </a>
+                        <a href="https://github.com/Ayusekar22" class="contact-item">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            GitHub
+                        </a>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+                  <div class="form-group">
+                      <label for="name" class="form-label">Name</label>
+                      <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="email" class="form-label">Email</label>
+                      <input type="email" id="email" name="_replyto" class="form-input" placeholder="email@example.com" required>
+                  </div>
+                  <div class="form-group">
+                      <label for="message" class="form-label">Message</label>
+                      <textarea id="message" name="message" class="form-input form-textarea" placeholder="Write your message..." rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+              </form>
+            </div>
+        </div>
+    </section>
 
-  <!-- Footer -->
-  <footer class="footer">
-    <div class="container">
-      <div class="social-links">
-        <a href="#">LinkedIn</a>
-        <a href="#">GitHub</a>
-        <a href="#">Twitter</a>
-        <a href="#">Kaggle</a>
-      </div>
-      <p class="footer-text">Designed & Built by Ayu Sekar © 2026</p>
-    </div>
-  </footer>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2026 Ni Putu Ayu Sekar Pradnya Dewi. All rights reserved.</p>
+        </div>
+    </footer>
 
-  <script>
-    // Skills Tab with Auto-Rotate Progress Bar
-    const tabs = document.querySelectorAll('.skill-tab');
-    const contents = document.querySelectorAll('.skill-content');
-    const progressBar = document.getElementById('progressBar');
-    const ROTATION_TIME = 5000;
-    
-    let currentIndex = 0;
-    let rotationTimer;
-
-    function switchTab(index) {
-      tabs.forEach(t => t.classList.remove('active'));
-      contents.forEach(c => c.classList.remove('active'));
-      
-      tabs[index].classList.add('active');
-      const tabId = tabs[index].getAttribute('data-tab');
-      document.getElementById(tabId).classList.add('active');
-      
-      // Reset progress bar
-      progressBar.classList.remove('animating');
-      void progressBar.offsetWidth; // Trigger reflow
-      progressBar.classList.add('animating');
-    }
-
-    function nextTab() {
-      currentIndex = (currentIndex + 1) % tabs.length;
-      switchTab(currentIndex);
-    }
-
-    function startRotation() {
-      clearInterval(rotationTimer);
-      rotationTimer = setInterval(nextTab, ROTATION_TIME);
-    }
-
-    // Manual tab click
-    tabs.forEach((tab, index) => {
-      tab.addEventListener('click', () => {
-        currentIndex = index;
-        switchTab(index);
-        startRotation();
-      });
-    });
-
-    // Start auto-rotation
-    startRotation();
-
-    // Smooth scroll for nav links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-          target.scrollIntoView({ behavior: 'smooth' });
-        }
-      });
-    });
-  </script>
-
+    <script src="script.js"></script>
 </body>
 </html>
