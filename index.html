@@ -8,6 +8,29 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- star background container -->
+    <div id="stars-container">
+        <div id="stars"></div>
+        <div id="stars2"></div>
+        <div id="stars3"></div>
+    </div>
+    
+    <!--  wave background -->
+    <div class="wave-container">
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax-waves">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(124, 58, 237, 0.05)" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(124, 58, 237, 0.03)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(139, 92, 246, 0.02)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(167, 139, 250, 0.01)" />
+            </g>
+        </svg>
+    </div>
+
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
         <div class="nav-container">
@@ -62,7 +85,6 @@
             <h2 class="section-title">My Skills</h2>
             <p class="section-subtitle">Technologies and tools I work with</p>
             
-            <!-- New tabbed skills interface -->
             <div class="skills-tabs">
                 <button class="skill-tab active" data-tab="programming">
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
@@ -133,12 +155,6 @@
                             <li>Translated strategic business requirements from stakeholders into functional system specifications, ensuring critical business metrics were integrated into the ERP data architecture.</li>
                             <li>Managed the system implementation lifecycle from prototyping to the Go-Live phase, ensuring full user adoption and successful automation of real-time operational reporting.</li>
                         </ul>
-                        <!-- <div class="timeline-tags">
-                            <span class="tag">JavaScript</span>
-                            <span class="tag">TypeScript</span>
-                            <span class="tag">React</span>
-                            <span class="tag">Next.js</span>
-                        </div> -->
                     </div>
                 </div>
                 
@@ -149,15 +165,8 @@
                             <ul class="timeline-description-list">
                               <li>Develop and maintain collaborative relationships with media partners and external organizations,
                                   increasing exposure and support for HIMTI programs.</li>
-                              <li>Oversee and assess content from each social media division to ensure alignment with branding
-                                  strategy and organizational goals.</li>
+                              <li>Supervised social media content production across divisions, ensuring 100% alignment with branding guidelines and organizational objectives.</li>
                             </ul>
-                        <!-- <div class="timeline-tags">
-                            <span class="tag">Node.js</span>
-                            <span class="tag">Vue.js</span>
-                            <span class="tag">PostgreSQL</span>
-                            <span class="tag">AWS</span>
-                        </div> -->
                     </div>
                 </div>
             </div>
@@ -186,12 +195,12 @@
                     <div class="project-info">
                         <h3 class="project-title">Jakarta-Weather-Prediction-2025</h3>
                         <p class="project-description">
-                          Central Jakarta Rainfall Prediction using a Two-Stage Approach, combining Random Forest for rain classification and XGBoost for precipitation volume regression.<div class="project-tags">
-                        </p>
+                          Central Jakarta Rainfall Prediction using a Two-Stage Approach, combining Random Forest for rain classification and XGBoost for precipitation volume regression.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Pandass</span>
+                            <span class="tag">Pandas</span>
                             <span class="tag">Machine Learning</span>
+                            <span class="tag">Time Series</span>
                         </div>
                     </div>
                 </article>
@@ -214,7 +223,7 @@
                          Identifying key risk factors and implementing Random Forest and XGBoost models for high-accuracy classification.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
-                            <span class="tag">Pandass</span>
+                            <span class="tag">Pandas</span>
                             <span class="tag">Machine Learning</span> 
                         </div>
                     </div>
@@ -241,7 +250,7 @@
                         <p class="publication-venue">The 8th International Conference on Information and Communications Technology 2025</p>
                         <div class="publication-links">
                             <a href="#" class="publication-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></polyline><polyline points="10 9 9 9 8 9"></polyline></svg>
                                 PDF
                             </a>
                         </div>
@@ -289,7 +298,7 @@
                   </div>
                   <div class="form-group">
                       <label for="message" class="form-label">Message</label>
-                      <textarea id="message" name="message" class="form-input form-textarea" placeholder="Write your message..." rows="5" required></textarea>
+                      <textarea id="message" name="message" class="form-input form-textarea" placeholder="Write your message here..." required></textarea>
                   </div>
                   <button type="submit" class="btn btn-primary btn-full">Send Message</button>
               </form>
@@ -300,7 +309,7 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">© 2026 Ni Putu Ayu Sekar Pradnya Dewi. All rights reserved.</p>
+            <p class="footer-text">© 2026 Ayu Sekar. All rights reserved.</p>
         </div>
     </footer>
 

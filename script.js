@@ -1,5 +1,4 @@
 // DOM Elements
-
 const navbar = document.getElementById("navbar")
 const navToggle = document.getElementById("nav-toggle")
 const navMenu = document.getElementById("nav-menu")
@@ -7,8 +6,99 @@ const navLinks = document.querySelectorAll(".nav-link")
 const contactForm = document.getElementById("contact-form")
 const sections = document.querySelectorAll("section[id]")
 
-// Mobile Navigation Toggle
+function createStars() {
+  const starsContainer = document.getElementById("stars")
+  const stars2Container = document.getElementById("stars2")
+  const stars3Container = document.getElementById("stars3")
 
+  if (!starsContainer || !stars2Container || !stars3Container) return
+
+  // Clear existing stars
+  starsContainer.innerHTML = ""
+  stars2Container.innerHTML = ""
+  stars3Container.innerHTML = ""
+
+  // Create small stars (layer 1 - fastest)
+  for (let i = 0; i < 100; i++) {
+    const star = document.createElement("div")
+    star.style.cssText = `
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      background: white;
+      border-radius: 50%;
+      left: ${Math.random() * 100}%;
+      top: ${Math.random() * 200}%;
+      opacity: ${Math.random() * 0.8 + 0.2};
+      box-shadow: 0 0 ${Math.random() * 3 + 1}px rgba(255, 255, 255, 0.8);
+    `
+    starsContainer.appendChild(star)
+  }
+
+  // Create medium stars (layer 2 - medium speed)
+  for (let i = 0; i < 50; i++) {
+    const star = document.createElement("div")
+    star.style.cssText = `
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      left: ${Math.random() * 100}%;
+      top: ${Math.random() * 200}%;
+      opacity: ${Math.random() * 0.7 + 0.3};
+      box-shadow: 0 0 ${Math.random() * 4 + 2}px rgba(167, 139, 250, 0.6);
+    `
+    stars2Container.appendChild(star)
+  }
+
+  // Create large stars (layer 3 - slowest)
+  for (let i = 0; i < 25; i++) {
+    const star = document.createElement("div")
+    star.style.cssText = `
+      position: absolute;
+      width: 3px;
+      height: 3px;
+      background: white;
+      border-radius: 50%;
+      left: ${Math.random() * 100}%;
+      top: ${Math.random() * 200}%;
+      opacity: ${Math.random() * 0.6 + 0.4};
+      box-shadow: 0 0 ${Math.random() * 6 + 3}px rgba(139, 92, 246, 0.8);
+    `
+    stars3Container.appendChild(star)
+  }
+}
+
+// Initialize stars on load
+createStars()
+
+// ==================== //
+// ==================== //
+let ticking = false
+
+window.addEventListener("scroll", () => {
+  if (!ticking) {
+    window.requestAnimationFrame(() => {
+      const scrolled = window.pageYOffset
+      const stars = document.getElementById("stars")
+      const stars2 = document.getElementById("stars2")
+      const stars3 = document.getElementById("stars3")
+
+      if (stars && stars2 && stars3) {
+        // Different parallax speeds for depth effect
+        stars.style.transform = `translateY(${scrolled * 0.3}px)`
+        stars2.style.transform = `translateY(${scrolled * 0.2}px)`
+        stars3.style.transform = `translateY(${scrolled * 0.1}px)`
+      }
+
+      ticking = false
+    })
+    ticking = true
+  }
+})
+
+// Mobile Navigation Toggle
 navToggle.addEventListener("click", () => {
   navToggle.classList.toggle("active")
   navMenu.classList.toggle("active")
@@ -31,7 +121,6 @@ document.addEventListener("click", (e) => {
 })
 
 // Navbar Scroll Effect
-
 let lastScroll = 0
 
 window.addEventListener("scroll", () => {
@@ -47,7 +136,6 @@ window.addEventListener("scroll", () => {
 })
 
 // Active Navigation Link on Scroll
-
 function setActiveNavLink() {
   const scrollPosition = window.scrollY + 100
 
@@ -71,7 +159,6 @@ window.addEventListener("scroll", setActiveNavLink)
 window.addEventListener("load", setActiveNavLink)
 
 // Smooth Scroll for Navigation Links
-
 navLinks.forEach((link) => {
   link.addEventListener("click", (e) => {
     e.preventDefault()
@@ -87,7 +174,6 @@ navLinks.forEach((link) => {
     }
   })
 })
-
 
 // Scroll Reveal Animation
 function revealOnScroll() {
@@ -142,9 +228,7 @@ document.head.appendChild(style)
 window.addEventListener("scroll", revealOnScroll)
 window.addEventListener("load", revealOnScroll)
 
-
 // Contact Form Handling
-
 contactForm.addEventListener("submit", (e) => {
   e.preventDefault()
 
@@ -184,7 +268,6 @@ function isValidEmail(email) {
 }
 
 // Notification
-
 function showNotification(message, type) {
   const existingNotification = document.querySelector(".notification")
   if (existingNotification) {
@@ -252,7 +335,6 @@ function showNotification(message, type) {
 }
 
 // Typing Effect for Role Title
-
 function typeWriter(element, text, speed = 100) {
   let i = 0
   element.textContent = ""
@@ -279,9 +361,7 @@ window.addEventListener("load", () => {
   }
 })
 
-
-// Parallax Effect forProfile
-
+// Parallax Effect for Profile
 window.addEventListener("scroll", () => {
   const hero = document.querySelector(".hero")
   const scrolled = window.pageYOffset
@@ -291,25 +371,19 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// ==================== //
-// Skill Item Hover Effect
-// ==================== //
-
 // Skills tab functionality
-const skillTabs = document.querySelectorAll('.skill-tab');
-const skillPanels = document.querySelectorAll('.skill-panel');
+const skillTabs = document.querySelectorAll(".skill-tab")
+const skillPanels = document.querySelectorAll(".skill-panel")
 
-skillTabs.forEach(tab => {
-  tab.addEventListener('click', () => {
-                // Remove active class from all tabs and panels
-  skillTabs.forEach(t => t.classList.remove('active'));
-  skillPanels.forEach(p => p.classList.remove('active'));
-                
-                // Add active class to clicked tab and corresponding panel
-  tab.classList.add('active');
-  const panelId = tab.getAttribute('data-tab');
-  document.getElementById(panelId).classList.add('active');
-    });
-});
+skillTabs.forEach((tab) => {
+  tab.addEventListener("click", () => {
+    // Remove active class from all tabs and panels
+    skillTabs.forEach((t) => t.classList.remove("active"))
+    skillPanels.forEach((p) => p.classList.remove("active"))
 
-
+    // Add active class to clicked tab and corresponding panel
+    tab.classList.add("active")
+    const panelId = tab.getAttribute("data-tab")
+    document.getElementById(panelId).classList.add("active")
+  })
+})
