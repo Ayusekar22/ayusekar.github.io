@@ -51,6 +51,7 @@ body {
 #stars2,
 #stars3 {
   position: absolute;
+  pointer-events: none;
   top: 0;
   left: 0;
   right: 0;
@@ -61,16 +62,19 @@ body {
 
 #stars {
   background: transparent;
+  pointer-events: none;
   animation: animateStars 50s linear infinite;
 }
 
 #stars2 {
   background: transparent;
+  pointer-events: none;
   animation: animateStars 100s linear infinite;
 }
 
 #stars3 {
   background: transparent;
+  pointer-events: none;
   animation: animateStars 150s linear infinite;
 }
 
